@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="sheets.css">
+    <title>Mi Portafolio</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido a mi Portafolio <img src="perfil.jpg" alt="Proyecto 2" height="100" width="90"></h1> 
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>¡Hola! Soy David Todaro, un apasionado por la programación y el desarrollo web. Me encanta crear soluciones
+            creativas y funcionales utilizando las últimas tecnologías web.</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <h3>Mercado Libre</h3>
+            <img src="Mercado-Libre-Logo-PNG1.png" alt="Proyecto 1" >
+            <p>Página web de ventas y compras donde un usuario puede cumplir ambos roles</p>
+        </div>
+        <div class="proyecto">
+            <h3>Tower defense 2</h3>
+            <img src="td.png" alt="Proyecto 2" >
+            <p>Juego estratégico donde debes protejer tu castillo del ataque de orcos mediante torres de defensa</p>
+        </div>
+    </section>
+
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <p>Si deseas contactarme, puedes enviar un mensaje a través del siguiente formulario:</p>
+        <form action="enviar.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Escriba su mensaje aqui"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>Derechos de autor &copy; [2023] [David Todaro]</p>
+    </footer>
+</body>
+
+</html>
